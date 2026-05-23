@@ -169,6 +169,74 @@ select.inp{cursor:pointer}
 .empty{text-align:center;padding:2.5rem 1rem;color:var(--muted);font-size:.875rem}
 .empty-icon{font-size:2rem;margin-bottom:.75rem;opacity:.4}
 
+/* REPORT BUTTON */
+.report-btn-wrap{margin-top:1.25rem;display:none}
+.report-btn-wrap.show{display:flex;gap:.6rem;flex-wrap:wrap}
+.btn-report{background:transparent;border:1px solid var(--cyan);color:var(--cyan);border-radius:7px;padding:.6rem 1.2rem;font-family:'Syne',sans-serif;font-size:.8rem;font-weight:700;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:.4rem}
+.btn-report:hover{background:rgba(0,212,255,0.1)}
+.btn-report.gold{border-color:var(--gold);color:var(--gold)}.btn-report.gold:hover{background:rgba(240,180,41,0.1)}
+.btn-report.green{border-color:var(--green);color:var(--green)}.btn-report.green:hover{background:rgba(34,197,94,0.1)}
+
+/* MODAL */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:1000;display:none;align-items:center;justify-content:center;padding:1.5rem}
+.modal-overlay.show{display:flex}
+.modal{background:#fff;color:#1a2b3c;border-radius:12px;max-width:780px;width:100%;max-height:90vh;overflow-y:auto;position:relative;animation:modalIn .3s ease}
+@keyframes modalIn{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:scale(1)}}
+.modal-close{position:absolute;top:1rem;right:1rem;background:#f1f5f9;border:none;border-radius:50%;width:32px;height:32px;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#64748b;z-index:10}
+.modal-close:hover{background:#e2e8f0}
+.modal-actions{display:flex;gap:.75rem;padding:1rem 1.5rem;border-bottom:1px solid #e2e8f0;background:#f8fafc;border-radius:12px 12px 0 0;flex-wrap:wrap}
+.ma-btn{display:flex;align-items:center;gap:.4rem;padding:.5rem 1.1rem;border-radius:6px;font-size:.82rem;font-weight:600;cursor:pointer;border:none;transition:all .2s}
+.ma-print{background:#1a2b45;color:#fff}.ma-print:hover{background:#243752}
+.ma-pdf{background:#2563a8;color:#fff}.ma-pdf:hover{background:#1a4f8a}
+.ma-close{background:#f1f5f9;color:#64748b;margin-left:auto}.ma-close:hover{background:#e2e8f0}
+
+/* REPORT CONTENT */
+#report-content{padding:2.5rem}
+.rpt-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:2px solid #e2e8f0}
+.rpt-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.3rem;color:#1a2b45}.rpt-logo span{color:#2563a8}
+.rpt-meta{text-align:right;font-size:.8rem;color:#64748b}
+.rpt-meta strong{display:block;font-size:.9rem;color:#1a2b45;margin-bottom:.2rem}
+.rpt-title{font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:800;color:#1a2b45;margin-bottom:.3rem}
+.rpt-subtitle{font-size:.875rem;color:#64748b;margin-bottom:2rem}
+.rpt-criteria{background:#f1f5f9;border-radius:8px;padding:1rem 1.25rem;margin-bottom:2rem;display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}
+.crit-item{font-size:.8rem}.crit-label{color:#94a3b8;text-transform:uppercase;letter-spacing:.06em;font-size:.7rem;margin-bottom:.2rem}
+.crit-val{font-weight:600;color:#1a2b45}
+.rpt-section-title{font-family:'Syne',sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#94a3b8;margin-bottom:1rem;padding-bottom:.5rem;border-bottom:1px solid #e2e8f0}
+.rpt-card{border:1px solid #e2e8f0;border-radius:10px;margin-bottom:1.25rem;overflow:hidden}
+.rpt-card-header{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem;background:#f8fafc;border-bottom:1px solid #e2e8f0}
+.rpt-car-name{font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:#1a2b45}
+.rpt-rank-badge{font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.25rem .8rem;border-radius:100px}
+.rpt-rank-1{background:#fef3c7;color:#92400e}
+.rpt-rank-2{background:#e0f2fe;color:#0369a1}
+.rpt-rank-3{background:#f1f5f9;color:#475569}
+.rpt-card-body{padding:1.25rem}
+.rpt-metrics{display:grid;grid-template-columns:repeat(5,1fr);gap:.75rem;margin-bottom:1rem}
+.rpt-metric{text-align:center;padding:.75rem .5rem;border-radius:7px;border:1px solid #e2e8f0}
+.rpt-metric-val{font-family:'Syne',sans-serif;font-size:1rem;font-weight:800;line-height:1;margin-bottom:.25rem}
+.rpt-metric-label{font-size:.68rem;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em}
+.rpt-m-price{color:#2563a8}
+.rpt-m-retail{color:#92400e}
+.rpt-m-fees{color:#64748b}
+.rpt-m-profit{color:#15803d}
+.rpt-m-score{color:#7c3aed}
+.rpt-flags{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:.75rem}
+.rpt-flag{display:inline-flex;align-items:center;gap:.35rem;font-size:.75rem;padding:.25rem .7rem;border-radius:100px;font-weight:500}
+.flag-good{background:#dcfce7;color:#15803d}
+.flag-warn{background:#fef9c3;color:#854d0e}
+.flag-bad{background:#fee2e2;color:#991b1b}
+.rpt-reason{font-size:.82rem;color:#475569;line-height:1.6;border-top:1px solid #f1f5f9;padding-top:.75rem;margin-top:.75rem}
+.rpt-footer{margin-top:2rem;padding-top:1.5rem;border-top:2px solid #e2e8f0;display:flex;justify-content:space-between;align-items:center;font-size:.78rem;color:#94a3b8}
+.rpt-disclaimer{max-width:500px;line-height:1.5}
+.rpt-summary{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;padding:1rem 1.25rem;margin-bottom:2rem;display:flex;gap:2rem;flex-wrap:wrap}
+.sum-item{text-align:center}.sum-num{font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:800;color:#15803d}
+.sum-label{font-size:.75rem;color:#64748b;margin-top:.1rem}
+
+@media print{
+  .modal-actions,.modal-close{display:none!important}
+  .modal{max-height:none;border-radius:0;box-shadow:none}
+  body{background:#fff}
+}
+
 /* CTA */
 .demo-cta{position:relative;z-index:10;text-align:center;padding:2rem 2rem 5rem;max-width:700px;margin:0 auto}
 .demo-cta h3{font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:700;margin-bottom:.75rem}
@@ -250,6 +318,11 @@ select.inp{cursor:pointer}
         <div id="l1-results" class="result-list">
           <div class="empty"><div class="empty-icon">🎯</div>Set your criteria and click Analyze to see ranked deals.</div>
         </div>
+        <div class="report-btn-wrap" id="l1-report-btns">
+          <button class="btn-report" onclick="showReport('l1')">📄 View Full Report</button>
+          <button class="btn-report gold" onclick="printReport()">🖨️ Print</button>
+          <button class="btn-report green" onclick="downloadPDF()">⬇️ Download PDF</button>
+        </div>
       </div>
     </div>
   </div>
@@ -319,6 +392,11 @@ select.inp{cursor:pointer}
         <div id="l2-results">
           <div class="empty"><div class="empty-icon">⚙️</div>Run the automation to see today's report.</div>
         </div>
+        <div class="report-btn-wrap" id="l2-report-btns">
+          <button class="btn-report gold" onclick="showReport('l2')">📄 View Full Report</button>
+          <button class="btn-report" onclick="printReport()">🖨️ Print</button>
+          <button class="btn-report green" onclick="downloadPDF()">⬇️ Download PDF</button>
+        </div>
       </div>
     </div>
   </div>
@@ -357,13 +435,33 @@ select.inp{cursor:pointer}
           <div class="empty"><div class="empty-icon">🔔</div>Alerts will appear here in real time.</div>
         </div>
         <button class="btn green-btn" style="margin-top:1.25rem" onclick="runLevel3()">🚀 Start Live System Demo</button>
+        <div class="report-btn-wrap" id="l3-report-btns">
+          <button class="btn-report green" onclick="showReport('l3')">📄 View Full Report</button>
+          <button class="btn-report" onclick="printReport()">🖨️ Print</button>
+          <button class="btn-report gold" onclick="downloadPDF()">⬇️ Download PDF</button>
+        </div>
       </div>
     </div>
   </div>
 
 </div>
 
-<!-- CTA -->
+<!-- REPORT MODAL -->
+<div class="modal-overlay" id="report-modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeReport()">✕</button>
+    <div class="modal-actions">
+      <button class="ma-btn ma-print" onclick="printReport()">🖨️ Print Report</button>
+      <button class="ma-btn ma-pdf" onclick="downloadPDF()">⬇️ Download PDF</button>
+      <button class="ma-btn ma-close" onclick="closeReport()">✕ Close</button>
+    </div>
+    <div id="report-content">
+      <!-- filled dynamically -->
+    </div>
+  </div>
+</div>
+
+
 <div class="demo-cta">
   <h3>Ready to Deploy This for Your Dealership?</h3>
   <p>ClarevAI builds and manages your AI Auto Sourcing Agent — from Level 1 to full Level 3 deployment. You focus on buying. We handle the intelligence.</p>
@@ -433,6 +531,7 @@ function showL1Results(){
     res.appendChild(d);
     setTimeout(()=>d.classList.add('show'),idx*200);
   });
+  setTimeout(()=>showReportBtns('l1'),l1Cars.length*200+400);
 }
 
 // ============ LEVEL 2 ============
@@ -484,6 +583,7 @@ function showL2Results(){
     res.appendChild(d);
     setTimeout(()=>d.classList.add('show'),idx*250);
   });
+  setTimeout(()=>showReportBtns('l2'),l1Cars.length*250+400);
   l2Running=false;
 }
 
@@ -539,6 +639,7 @@ function runLevel3(){
         al.appendChild(d);
       },i*600);
     });
+    setTimeout(()=>showReportBtns('l3'),l3AlertsData.length*600+800);
   },2000);
 }
 
@@ -558,6 +659,100 @@ function switchTab(n){
   document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',i===n-1));
   document.querySelectorAll('.panel').forEach((p,i)=>p.classList.toggle('active',i===n-1));
   l3Running=false;
+}
+
+// ============ REPORT ============
+const reportCars=[
+  {rank:1,rankLabel:"Best Buy #1",year:2020,make:"Toyota",model:"RAV4",trim:"XLE AWD",price:"$10,800",retail:"$16,500",fees:"$850",transport:"$350",profit:"$4,500",profitNum:4500,score:91,risk:"Low",riskColor:"#15803d",riskBg:"#dcfce7",site:"Manheim Atlanta",vin:"2T3BFREV2LW123456",miles:"62,400",color:"Magnetic Gray",condition:"Grade 3.5",title:"Clean",flags:[{label:"Clean Title",type:"good"},{label:"No Accidents",type:"good"},{label:"One Owner",type:"good"},{label:"62K Miles",type:"good"},{label:"Strong Demand",type:"good"}],reason:"Clean title, single owner, no accident history, strong SUV demand in current market. KBB retail value of $16,500 leaves significant profit margin after all-in costs. Grade 3.5 condition report indicates minor cosmetic wear only."},
+  {rank:2,rankLabel:"Best Buy #2",year:2019,make:"Honda",model:"CR-V",trim:"EX AWD",price:"$11,200",retail:"$16,800",fees:"$900",transport:"$250",profit:"$4,250",profitNum:4250,score:87,risk:"Low",riskColor:"#15803d",riskBg:"#dcfce7",site:"ADESA Southeast",vin:"5J6RW2H85KA012345",miles:"58,900",color:"Lunar Silver",condition:"Grade 3.0",title:"Clean",flags:[{label:"Clean Title",type:"good"},{label:"Dealer Maintained",type:"good"},{label:"No Structural Damage",type:"good"},{label:"High Demand Model",type:"good"},{label:"Minor Wear",type:"warn"}],reason:"Dealer-maintained with full service history. No structural or frame damage. Honda CR-V is a top-10 most searched used SUV nationwide. Minor interior wear noted in condition report — budget $100 for detail."},
+  {rank:3,rankLabel:"Best Buy #3",year:2018,make:"Ford",model:"Explorer",trim:"XLT 4WD",price:"$9,400",retail:"$14,200",fees:"$800",transport:"$300",profit:"$3,700",profitNum:3700,score:74,risk:"Medium",riskColor:"#854d0e",riskBg:"#fef9c3",site:"Manheim Atlanta",vin:"1FM5K8D83JGA98765",miles:"81,200",color:"White Platinum",condition:"Grade 2.5",title:"Clean",flags:[{label:"Clean Title",type:"good"},{label:"No Frame Damage",type:"good"},{label:"Minor Fender Repair",type:"warn"},{label:"81K Miles",type:"warn"},{label:"2 Previous Owners",type:"warn"}],reason:"Clean title with no structural damage. Minor right-rear fender repair estimated at $350–$450. Higher mileage reduces retail ceiling slightly. Still meets minimum profit threshold with room for negotiation."},
+];
+
+function showReport(level){
+  const now=new Date();
+  const dateStr=now.toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
+  const timeStr=now.toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit'});
+  const levelLabels={l1:'Level 1 — Manual AI Analysis',l2:'Level 2 — Automated Sourcing Report',l3:'Level 3 — Full AI System Intelligence Report'};
+  const totalProfit=reportCars.reduce((s,c)=>s+c.profitNum,0);
+
+  let html=`
+    <div class="rpt-header">
+      <div><div class="rpt-logo">Clarev<span>AI</span></div><div style="font-size:.75rem;color:#94a3b8;margin-top:.2rem">AI Auto Sourcing Agent</div></div>
+      <div class="rpt-meta"><strong>${levelLabels[level]}</strong>${dateStr} · ${timeStr}</div>
+    </div>
+    <div class="rpt-title">Daily Vehicle Sourcing Report</div>
+    <div class="rpt-subtitle">Atlanta Metro Area · SUVs under $12,000 · Under 90,000 miles · Clean Title · Min. $3,000 profit</div>
+    <div class="rpt-summary">
+      <div class="sum-item"><div class="sum-num">3</div><div class="sum-label">Deals Found</div></div>
+      <div class="sum-item"><div class="sum-num">$${totalProfit.toLocaleString()}</div><div class="sum-label">Total Est. Profit</div></div>
+      <div class="sum-item"><div class="sum-num">$${Math.round(totalProfit/3).toLocaleString()}</div><div class="sum-label">Avg. Profit/Deal</div></div>
+      <div class="sum-item"><div class="sum-num">1,847</div><div class="sum-label">Listings Scanned</div></div>
+      <div class="sum-item"><div class="sum-num">2</div><div class="sum-label">Low Risk Deals</div></div>
+    </div>
+    <div class="rpt-section-title">Ranked Deal Analysis</div>`;
+
+  reportCars.forEach(c=>{
+    const flags=c.flags.map(f=>`<span class="rpt-flag ${f.type==='good'?'flag-good':f.type==='warn'?'flag-warn':'flag-bad'}">${f.type==='good'?'✓':f.type==='warn'?'⚠':f.type==='bad'?'✗':''} ${f.label}</span>`).join('');
+    html+=`
+      <div class="rpt-card">
+        <div class="rpt-card-header">
+          <div>
+            <div class="rpt-car-name">${c.year} ${c.make} ${c.model} ${c.trim}</div>
+            <div style="font-size:.75rem;color:#94a3b8;margin-top:.2rem">VIN: ${c.vin} · ${c.miles} miles · ${c.color} · ${c.condition} Condition</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:.75rem">
+            <div style="text-align:center"><div style="font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:800;color:#7c3aed;line-height:1">${c.score}</div><div style="font-size:.65rem;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em">Deal Score™</div></div>
+            <div class="rpt-rank-badge ${c.rank===1?'rpt-rank-1':c.rank===2?'rpt-rank-2':'rpt-rank-3'}">${c.rankLabel}</div>
+          </div>
+        </div>
+        <div class="rpt-card-body">
+          <div class="rpt-metrics">
+            <div class="rpt-metric"><div class="rpt-metric-val rpt-m-price">${c.price}</div><div class="rpt-metric-label">Auction Price</div></div>
+            <div class="rpt-metric"><div class="rpt-metric-val rpt-m-retail">${c.retail}</div><div class="rpt-metric-label">Est. Retail</div></div>
+            <div class="rpt-metric"><div class="rpt-metric-val rpt-m-fees">${c.fees}</div><div class="rpt-metric-label">Auction Fees</div></div>
+            <div class="rpt-metric"><div class="rpt-metric-val rpt-m-fees">${c.transport}</div><div class="rpt-metric-label">Transport</div></div>
+            <div class="rpt-metric" style="background:#f0fdf4;border-color:#bbf7d0"><div class="rpt-metric-val rpt-m-profit">+${c.profit}</div><div class="rpt-metric-label">Est. Profit</div></div>
+          </div>
+          <div class="rpt-flags">${flags}</div>
+          <div class="rpt-reason"><strong style="color:#1a2b45">AI Analysis:</strong> ${c.reason}<br><span style="color:#94a3b8;font-size:.75rem">📍 Source: ${c.site} · Title: ${c.title}</span></div>
+        </div>
+      </div>`;
+  });
+
+  html+=`
+    <div class="rpt-footer">
+      <div class="rpt-disclaimer">This report is generated by ClarevAI's AI Auto Sourcing Agent for demonstration purposes. All valuations are estimates based on KBB, MMR, and current market data. Actual results may vary. Always verify vehicle condition prior to purchase.</div>
+      <div style="text-align:right"><strong style="color:#1a2b45">ClarevAI</strong><br>hello@clarevai.com<br>ClarevAI.com</div>
+    </div>`;
+
+  document.getElementById('report-content').innerHTML=html;
+  document.getElementById('report-modal').classList.add('show');
+}
+
+function closeReport(){
+  document.getElementById('report-modal').classList.remove('show');
+}
+
+function printReport(){
+  const modal=document.getElementById('report-modal');
+  const wasOpen=modal.classList.contains('show');
+  if(!wasOpen){showReport('l1');}
+  setTimeout(()=>window.print(),200);
+}
+
+function downloadPDF(){
+  const modal=document.getElementById('report-modal');
+  if(!modal.classList.contains('show')){showReport('l1');}
+  setTimeout(()=>{
+    alert('To save as PDF:\n1. Click Print (Ctrl+P)\n2. Set destination to "Save as PDF"\n3. Click Save\n\nThis produces a clean single-page PDF.');
+    window.print();
+  },200);
+}
+
+// Show report buttons after results appear
+function showReportBtns(level){
+  const el=document.getElementById(level+'-report-btns');
+  if(el)el.classList.add('show');
 }
 </script>
 </body>
