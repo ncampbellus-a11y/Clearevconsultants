@@ -3,7 +3,111 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clearev Consultants — Vehicle Sourcing</title>
+
+<!-- ── PRIMARY SEO ── -->
+<title>Clearev Consultants | Vehicle Sourcing Broker | Florida & Georgia</title>
+<meta name="description" content="Clearev Consultants is a vehicle sourcing brokerage serving Florida and Georgia. We find your car, negotiate the best price, and deliver it to your door — no dealership visits required. Serving relocators, retirees, families, and busy professionals.">
+<meta name="keywords" content="vehicle sourcing broker, car broker Florida, car broker Georgia, car buying service, vehicle concierge, auto broker Coral Springs, car sourcing Broward County, buy a car without dealership, vehicle broker near me, car delivery service Florida">
+<meta name="author" content="Clearev Consultants">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://clearevconsultants.com">
+
+<!-- ── OPEN GRAPH (Facebook, LinkedIn) ── -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://clearevconsultants.com">
+<meta property="og:title" content="Clearev Consultants | Vehicle Sourcing Broker | Florida & Georgia">
+<meta property="og:description" content="We find your car. You live your life. Clearev Consultants is an independent vehicle sourcing broker serving Florida and Georgia. No dealership visits required.">
+<meta property="og:image" content="https://raw.githubusercontent.com/ncampbellus-a11y/Clearev-Vehicles/main/logo.png">
+<meta property="og:site_name" content="Clearev Consultants">
+<meta property="og:locale" content="en_US">
+
+<!-- ── TWITTER CARD ── -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Clearev Consultants | Vehicle Sourcing Broker">
+<meta name="twitter:description" content="We find your car. You live your life. Independent vehicle sourcing broker serving Florida and Georgia.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/ncampbellus-a11y/Clearev-Vehicles/main/logo.png">
+
+<!-- ── SCHEMA MARKUP (Local Business + Service) ── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Clearev Consultants",
+  "description": "Clearev Consultants is an independent vehicle sourcing brokerage. We find, negotiate, and deliver your next vehicle — no dealership visits required.",
+  "url": "https://clearevconsultants.com",
+  "telephone": "+14045942950",
+  "email": "info@clearevconsultants.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Coral Springs",
+    "addressRegion": "FL",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "Florida"
+    },
+    {
+      "@type": "State",
+      "name": "Georgia"
+    }
+  ],
+  "serviceType": "Vehicle Sourcing Brokerage",
+  "priceRange": "$$",
+  "openingHours": "Mo-Fr 09:00-18:00",
+  "sameAs": [
+    "https://www.clearevconsultants.com"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Vehicle Sourcing Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Vehicle Sourcing for Vehicles up to $10,000",
+          "description": "We source and deliver vehicles priced up to $10,000",
+          "price": "500",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Vehicle Sourcing for $10,001 - $20,000",
+          "description": "We source and deliver vehicles priced $10,001 to $20,000",
+          "price": "750",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Vehicle Sourcing for $20,001 - $30,000",
+          "description": "We source and deliver vehicles priced $20,001 to $30,000",
+          "price": "1000",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Vehicle Sourcing for $30,001 and above",
+          "description": "We source and deliver vehicles priced $30,001 and above",
+          "price": "1500",
+          "priceCurrency": "USD"
+        }
+      }
+    ]
+  }
+}
+</script>
+
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -479,6 +583,178 @@ section { padding: 90px 60px; }
   line-height: 1.75;
 }
 
+/* ── PROBLEM SECTION (new) ── */
+.problem-section {
+  background: var(--white);
+  border-top: 1px solid var(--cream-dark);
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: 52px;
+  border-top: 0.5px solid var(--cream-dark);
+}
+
+.problem-card {
+  padding: 36px 32px 36px 0;
+  border-right: 0.5px solid var(--cream-dark);
+}
+.problem-card:last-child { border-right: none; padding-right: 0; }
+.problem-card:first-child { padding-left: 0; }
+.problem-card:not(:first-child) { padding-left: 32px; }
+
+.problem-icon {
+  width: 34px;
+  height: 34px;
+  margin-bottom: 18px;
+}
+
+.problem-title {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.problem-desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--muted);
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+.problem-diff {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--gold-dark);
+}
+
+/* ── TIMELINE SECTION (new) ── */
+.timeline-section {
+  background: var(--navy);
+  padding-top: 0;
+}
+
+.timeline-section .eyebrow { color: var(--gold); }
+.timeline-section .section-title { color: var(--cream); }
+
+.timeline-list {
+  margin-top: 52px;
+  border-top: 0.5px solid rgba(201,168,76,0.2);
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 32px;
+  padding: 30px 0;
+  border-bottom: 0.5px solid rgba(201,168,76,0.2);
+}
+
+.timeline-step-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--gold);
+}
+
+.timeline-step-day {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(240,234,214,0.5);
+  margin-top: 4px;
+}
+
+.timeline-step-desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(240,234,214,0.8);
+  line-height: 1.75;
+  align-self: center;
+}
+
+/* ── FAQ SECTION (new) ── */
+.faq-section {
+  background: var(--cream);
+  border-top: 1px solid var(--cream-dark);
+}
+
+.faq-list {
+  margin-top: 40px;
+  max-width: 760px;
+}
+
+.faq-item {
+  border-bottom: 0.5px solid rgba(27,46,75,0.15);
+}
+
+.faq-item summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 0;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.faq-item summary::-webkit-details-marker { display: none; }
+
+.faq-question {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--navy);
+}
+
+.faq-icon {
+  font-size: 22px;
+  color: var(--gold);
+  font-weight: 300;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.faq-item[open] .faq-icon { transform: rotate(45deg); }
+
+.faq-answer {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--muted);
+  line-height: 1.75;
+  padding-bottom: 24px;
+  max-width: 680px;
+}
+
+@media (max-width: 768px) {
+  .problem-grid { grid-template-columns: 1fr; margin-top: 28px; }
+  .problem-card {
+    border-right: none !important;
+    border-bottom: 0.5px solid var(--cream-dark);
+    padding: 24px 0 !important;
+  }
+  .problem-card:last-child { border-bottom: none; }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .faq-question { font-size: 17px; }
+}
+/* ── END NEW SECTIONS ── */
+
 /* ── VEHICLES ── */
 .vehicles-section { background: var(--navy); }
 .vehicles-section .eyebrow { color: var(--gold); }
@@ -788,6 +1064,267 @@ section { padding: 90px 60px; }
   border-top: none;
   padding-top: 60px;
 }
+
+/* ── PRICING TIERS (new) ── */
+.pricing-tier-intro {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 52px;
+}
+
+.pricing-tier-intro .section-title {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.pricing-tier-sub {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: stretch;
+  margin-bottom: 56px;
+}
+
+.pricing-card {
+  background: var(--white);
+  border: 1px solid var(--cream-dark);
+  border-radius: 4px;
+  padding: 36px 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card.highlighted {
+  border: 2px solid #C9A84C;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  transform: translateY(-6px);
+}
+
+.pricing-card-badge {
+  position: absolute;
+  top: -14px;
+  right: 22px;
+  background: #C9A84C;
+  color: var(--navy);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 3px;
+}
+
+.pricing-card-badge.luxury {
+  position: static;
+  display: inline-block;
+  background: var(--navy);
+  color: var(--gold);
+  margin-bottom: 14px;
+}
+
+.pricing-card-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--navy);
+  margin-bottom: 14px;
+}
+
+.pricing-card-price {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 42px;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1;
+}
+
+.pricing-card-price-sub {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  margin-top: 4px;
+  margin-bottom: 18px;
+}
+
+.pricing-card-best {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.pricing-card-divider {
+  width: 100%;
+  height: 1px;
+  background: var(--cream-dark);
+  margin-bottom: 20px;
+}
+
+.pricing-card-list {
+  list-style: none;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+.pricing-card-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--navy);
+  line-height: 1.55;
+  margin-bottom: 12px;
+}
+
+.pricing-card-list li .icon-check {
+  color: #C9A84C;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.pricing-card-list.excluded li {
+  color: var(--muted);
+}
+
+.pricing-card-list.excluded li .icon-x {
+  color: #9A9A9A;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.pricing-card-cta {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 14px 0;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: auto;
+  transition: opacity 0.2s ease;
+}
+
+.pricing-card-cta:hover { opacity: 0.85; }
+
+.pricing-card-cta.cta-outline {
+  background: transparent;
+  border: 1.5px solid var(--navy);
+  color: var(--gold-dark);
+}
+
+.pricing-card-cta.cta-solid {
+  background: #C9A84C;
+  border: 1.5px solid #C9A84C;
+  color: var(--navy);
+}
+
+.pricing-callout {
+  background: rgba(201,168,76,0.14);
+  border-radius: 4px;
+  text-align: center;
+  padding: 40px 32px;
+  max-width: 680px;
+  margin: 0 auto 60px;
+}
+
+.pricing-callout p {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--navy);
+  line-height: 1.65;
+  margin-bottom: 22px;
+}
+
+.pricing-callout-cta {
+  display: inline-block;
+  background: var(--navy);
+  color: #C9A84C;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 3px;
+  transition: opacity 0.2s ease;
+}
+
+.pricing-callout-cta:hover { opacity: 0.85; }
+
+.pricing-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pricing-table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.pricing-table th, .pricing-table td {
+  padding: 14px 16px;
+  text-align: center;
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.pricing-table th:first-child, .pricing-table td:first-child {
+  text-align: left;
+}
+
+.pricing-table thead th {
+  font-family: 'Jost', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--navy);
+  background: var(--cream);
+}
+
+.pricing-table tbody tr:nth-child(even) {
+  background: #FAFAF8;
+}
+
+.pricing-table tbody tr:nth-child(odd) {
+  background: var(--white);
+}
+
+.pricing-table td {
+  color: var(--navy);
+}
+
+.pricing-table .icon-check { color: #C9A84C; font-weight: 700; }
+.pricing-table .icon-x { color: #B5B5B5; font-weight: 700; }
+
+@media (max-width: 768px) {
+  .pricing-cards {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .pricing-card.highlighted {
+    transform: none;
+  }
+  .pricing-tier-intro { margin-bottom: 36px; }
+  .pricing-callout { padding: 28px 22px; }
+}
+/* ── END PRICING TIERS ── */
 
 .pricing-intro {
   font-size: 17px;
@@ -1215,10 +1752,11 @@ footer {
       <span style="font-family:'Jost',sans-serif; font-size:11px; letter-spacing:0.25em; text-transform:uppercase; color:#C9A84C; font-weight:500;">Vehicle Sourcing Brokerage</span>
       <div style="width:30px; height:0.5px; background:#C9A84C; opacity:0.6;"></div>
     </div>
-    <h1 class="hero-headline">We find your car.<br><em>You live your life.</em></h1>
+    <h1 class="hero-headline">Stop Negotiating<br>Against Professionals.<br><em>Hire One.</em></h1>
     <p class="hero-sub">The car buying experience you deserve.</p>
-    <p class="hero-body">Clearev Consultants takes the entire car buying process off your plate — from search to delivery — so you can focus on what matters most.</p>
-    <a class="hero-btn" href="https://tally.so/r/44zoQo" target="_blank">Speak to a Consultant →</a>
+    <p class="hero-body">Clearev handles every step of your purchase — sourcing, negotiating, and protecting you in the finance office. Flat fee. No hidden costs. Average client saves $2,800 or more.</p>
+    <a class="hero-btn" href="https://tally.so/r/yPgxO8" target="_blank">Book Your Free 15-Minute Strategy Call →</a>
+    <p style="font-size:13px; color:rgba(240,234,214,0.55); margin-top:14px; font-style:italic;">No commitment. Just clarity on what you're driving into.</p>
   </div>
   <div class="hero-scroll">
     <div class="scroll-line"></div>
@@ -1226,30 +1764,45 @@ footer {
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
-<section class="how-section">
+<!-- HOW IT WORKS (TIMELINE) -->
+<section class="timeline-section">
   <div class="eyebrow">How it works</div>
-  <h2 class="section-title">A concierge experience,<br>start to finish.</h2>
-  <div class="how-grid">
-    <div class="how-step">
-      <div class="how-num">01</div>
-      <div class="how-title">Tell us what you need</div>
-      <div class="how-desc">Complete a brief intake form sharing your vehicle preferences, budget, and timeline. No dealership visit required.</div>
+  <h2 class="section-title">Here is exactly what happens<br>when you hire Clearev.</h2>
+  <div class="timeline-list">
+    <div class="timeline-item">
+      <div>
+        <div class="timeline-step-label">Step 1</div>
+        <div class="timeline-step-day">Day 1</div>
+      </div>
+      <div class="timeline-step-desc">You tell us what you want. We build your target vehicle profile and pull your true market value report.</div>
     </div>
-    <div class="how-step">
-      <div class="how-num">02</div>
-      <div class="how-title">We do the searching</div>
-      <div class="how-desc">We source from dealer networks, auctions, and private listings to find the right vehicle at the right price.</div>
+    <div class="timeline-item">
+      <div>
+        <div class="timeline-step-label">Step 2</div>
+        <div class="timeline-step-day">Days 2 to 3</div>
+      </div>
+      <div class="timeline-step-desc">We contact dealers on your behalf. No test drives with salespeople breathing down your neck.</div>
     </div>
-    <div class="how-step">
-      <div class="how-num">03</div>
-      <div class="how-title">You stay informed</div>
-      <div class="how-desc">Every step is communicated to you clearly and promptly. No guesswork. No waiting in the dark.</div>
+    <div class="timeline-item">
+      <div>
+        <div class="timeline-step-label">Step 3</div>
+        <div class="timeline-step-day">Days 4 to 5</div>
+      </div>
+      <div class="timeline-step-desc">We collect competing offers and negotiate to floor pricing.</div>
     </div>
-    <div class="how-step">
-      <div class="how-num">04</div>
-      <div class="how-title">Your car comes to you</div>
-      <div class="how-desc">We coordinate delivery to your door. You never have to set foot in a showroom.</div>
+    <div class="timeline-item">
+      <div>
+        <div class="timeline-step-label">Step 4</div>
+        <div class="timeline-step-day">Before you sign</div>
+      </div>
+      <div class="timeline-step-desc">We review every number in the finance office with you. Nothing gets added without your understanding and approval.</div>
+    </div>
+    <div class="timeline-item">
+      <div>
+        <div class="timeline-step-label">Step 5</div>
+        <div class="timeline-step-day">After the deal</div>
+      </div>
+      <div class="timeline-step-desc">You receive a written savings summary showing exactly what you saved versus the original offer.</div>
     </div>
   </div>
 </section>
@@ -1344,6 +1897,43 @@ footer {
     <span class="audience-tag">First-Time Buyers</span>
   </div>
 </div>
+
+<!-- THE PROBLEM -->
+<section class="problem-section">
+  <div class="eyebrow">The problem</div>
+  <h2 class="section-title">The dealership has a team trained<br>to maximize what you pay.<br>You showed up alone.</h2>
+  <div class="problem-grid">
+    <div class="problem-card">
+      <svg class="problem-icon" viewBox="0 0 48 48" fill="none" stroke="#C9A84C" stroke-width="1.6">
+        <path d="M6 24 L24 6 L42 12 L36 30 L18 42 Z" stroke-linejoin="round"/>
+        <circle cx="28" cy="18" r="3.5"/>
+      </svg>
+      <div class="problem-title">Purchase Price</div>
+      <div class="problem-desc">Dealers anchor you to sticker price. We start at invoice and work down.</div>
+      <div class="problem-diff">Difference: $1,000 to $3,000</div>
+    </div>
+    <div class="problem-card">
+      <svg class="problem-icon" viewBox="0 0 48 48" fill="none" stroke="#C9A84C" stroke-width="1.6">
+        <path d="M6 18 H36 M30 12 L36 18 L30 24" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M42 30 H12 M18 24 L12 30 L18 36" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="problem-title">Your Trade-In</div>
+      <div class="problem-desc">Dealers lowball trades knowing most buyers won't push back. We get competing offers first.</div>
+      <div class="problem-diff">Difference: $500 to $2,500</div>
+    </div>
+    <div class="problem-card">
+      <svg class="problem-icon" viewBox="0 0 48 48" fill="none" stroke="#C9A84C" stroke-width="1.6">
+        <rect x="10" y="6" width="28" height="36" rx="1.5" stroke-linejoin="round"/>
+        <line x1="16" y1="16" x2="32" y2="16" stroke-linecap="round"/>
+        <line x1="16" y1="24" x2="32" y2="24" stroke-linecap="round"/>
+        <line x1="16" y1="32" x2="26" y2="32" stroke-linecap="round"/>
+      </svg>
+      <div class="problem-title">The Finance Office</div>
+      <div class="problem-desc">The highest-margin room in the dealership. GAP insurance, warranties, protection packages — most of it unnecessary. We defend every line.</div>
+      <div class="problem-diff">Difference: $800 to $2,000</div>
+    </div>
+  </div>
+</section>
 
 <!-- BROKER EXPLAINER -->
 <section class="broker-section" style="background: var(--navy); padding: 52px 60px 20px; border-top: 1px solid rgba(201,168,76,0.2);">
@@ -1482,46 +2072,241 @@ footer {
 
 <!-- PRICING -->
 <section class="pricing-section">
-  <div class="eyebrow">Our fees</div>
-  <h2 class="section-title">Simple, transparent pricing.</h2>
-  <p class="pricing-intro">Our flat-rate fee is charged separately from the vehicle purchase price. No commissions. No markups. No surprises.</p>
-  <details>
-    <summary>
-      <span class="summary-label">View fee schedule</span>
-      <span class="summary-icon">+</span>
-    </summary>
-    <div class="pricing-rows">
-      <div class="pricing-row">
-        <span class="pricing-range">Vehicle up to $10,000</span>
-        <span class="pricing-fee">$500</span>
-      </div>
-      <div class="pricing-row">
-        <span class="pricing-range">$10,001 — $20,000</span>
-        <span class="pricing-fee">$750</span>
-      </div>
-      <div class="pricing-row">
-        <span class="pricing-range">$20,001 — $30,000</span>
-        <span class="pricing-fee">$1,000</span>
-      </div>
-      <div class="pricing-row">
-        <span class="pricing-range">$30,001 and above</span>
-        <span class="pricing-fee">$1,500</span>
-      </div>
+  <div class="pricing-tier-intro">
+    <div class="eyebrow" style="justify-content:center; display:flex;">Our fees</div>
+    <h2 class="section-title">Our Fee. Your Savings. Do The Math.</h2>
+    <p class="pricing-tier-sub">Flat fee. No percentage of your purchase. No surprises. Every tier includes a free 15-minute strategy call before you commit.</p>
+  </div>
+
+  <div class="pricing-cards">
+
+    <!-- CARD 1: NAVIGATOR -->
+    <div class="pricing-card">
+      <div class="pricing-card-title">Navigator</div>
+      <div class="pricing-card-price">$599</div>
+      <div class="pricing-card-price-sub">One-time flat fee</div>
+      <p class="pricing-card-best">Best for buyers who know what they want and need someone to get the best price.</p>
+      <div class="pricing-card-divider"></div>
+      <ul class="pricing-card-list">
+        <li><span class="icon-check">✓</span> Vehicle sourcing and market analysis</li>
+        <li><span class="icon-check">✓</span> Dealer identification and outreach</li>
+        <li><span class="icon-check">✓</span> Purchase price negotiation</li>
+        <li><span class="icon-check">✓</span> Deal review before you sign</li>
+        <li><span class="icon-check">✓</span> Direct negotiator access via text and phone</li>
+      </ul>
+      <ul class="pricing-card-list excluded">
+        <li><span class="icon-x">✕</span> Trade-in negotiation</li>
+        <li><span class="icon-x">✕</span> Finance office coaching</li>
+      </ul>
+      <a class="pricing-card-cta cta-outline" href="https://tally.so/r/yPgxO8" target="_blank">Get Started</a>
     </div>
-    <p class="pricing-note">All fees are due at time of engagement and are separate from the vehicle purchase price. A refund policy applies if we are unable to source your vehicle.</p>
-  </details>
+
+    <!-- CARD 2: FULL CONCIERGE (highlighted) -->
+    <div class="pricing-card highlighted">
+      <div class="pricing-card-badge">Most Popular</div>
+      <div class="pricing-card-title">Full Concierge</div>
+      <div class="pricing-card-price">$999</div>
+      <div class="pricing-card-price-sub">One-time flat fee</div>
+      <p class="pricing-card-best">Best for anyone with a trade-in or who has ever felt overwhelmed in the finance office.</p>
+      <div class="pricing-card-divider"></div>
+      <ul class="pricing-card-list">
+        <li><span class="icon-check">✓</span> Everything in Navigator, plus:</li>
+        <li><span class="icon-check">✓</span> Trade-in valuation and counter-negotiation</li>
+        <li><span class="icon-check">✓</span> Finance office coaching and add-on defense</li>
+        <li><span class="icon-check">✓</span> Written savings report delivered after closing</li>
+        <li><span class="icon-check">✓</span> Priority response within 2 business hours</li>
+      </ul>
+      <a class="pricing-card-cta cta-solid" href="https://tally.so/r/yPgxO8" target="_blank">Get Started</a>
+    </div>
+
+    <!-- CARD 3: PREMIER -->
+    <div class="pricing-card">
+      <div class="pricing-card-badge luxury">Luxury and Exotic</div>
+      <div class="pricing-card-title">Premier</div>
+      <div class="pricing-card-price">$1,799</div>
+      <div class="pricing-card-price-sub">One-time flat fee</div>
+      <p class="pricing-card-best">Best for vehicles $75,000 and above where allocation games, ADM markups, and sourcing complexity require specialist-level negotiation.</p>
+      <div class="pricing-card-divider"></div>
+      <ul class="pricing-card-list">
+        <li><span class="icon-check">✓</span> Everything in Full Concierge, plus:</li>
+        <li><span class="icon-check">✓</span> Exotic and luxury market sourcing</li>
+        <li><span class="icon-check">✓</span> ADM (Additional Dealer Markup) negotiation</li>
+        <li><span class="icon-check">✓</span> Allocation and priority access strategies</li>
+        <li><span class="icon-check">✓</span> Extended deal timeline support up to 30 days</li>
+        <li><span class="icon-check">✓</span> Personal debrief call after closing</li>
+      </ul>
+      <a class="pricing-card-cta cta-outline" href="https://tally.so/r/yPgxO8" target="_blank">Get Started</a>
+    </div>
+
+  </div>
+
+  <!-- CALLOUT -->
+  <div class="pricing-callout">
+    <p>Not sure which tier fits your situation? Book a free 15-minute strategy call and we will tell you exactly which service you need — and whether we can help.</p>
+    <a class="pricing-callout-cta" href="https://tally.so/r/yPgxO8" target="_blank">Book Your Free Strategy Call</a>
+  </div>
+
+  <!-- COMPARISON TABLE -->
+  <h3 class="section-title" style="text-align:center; font-size:24px; margin-bottom:28px;">What Is Included At Each Level</h3>
+  <div class="pricing-table-wrap">
+    <table class="pricing-table">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Navigator<br>$599</th>
+          <th>Full Concierge<br>$999</th>
+          <th>Premier<br>$1,799</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Vehicle sourcing and market analysis</td>
+          <td><span class="icon-check">✓</span></td>
+          <td><span class="icon-check">✓</span></td>
+          <td><span class="icon-check">✓</span></td>
+        </tr>
+        <tr>
+          <td>Dealer outreach and contact</td>
+          <td><span class="icon-check">✓</span></td>
+          <td><span class="icon-check">✓</span></td>
+          <td><span class="icon-check">✓</span></td>
+        </tr>
+        <tr>
+          <td>Purchase price negotiation</td>
+          <td><span class="icon-check">✓</span></td>
+          <td><span class="icon-check">✓</span></td>
+          <td><span class="icon-check">✓</span></td>
+        </tr>
+        <tr>
+          <td>Deal review before signing</td>
+          <td><span class="icon-check">✓</span></td>
+          <td><span class="icon-check">✓</span></td>
+          <td><span class="icon-check">✓</span></td>
+        </tr>
+        <tr>
+          <td>Negotiator access via text and phone</td>
+          <td><span class="icon-check">✓</span></td>
+          <td><span class="icon-check">✓</span></td>
+          <td><span class="icon-check">✓</span></td>
+        </tr>
+        <tr>
+          <td>Trade-in valuation</td>
+          <td><span class="icon-x">✕</span></td>
+          <td><span class="icon-check">✓</span></td>
+          <td><span class="icon-check">✓</span></td>
+        </tr>
+        <tr>
+          <td>Trade-in counter-negotiation</td>
+          <td><span class="icon-x">✕</span></td>
+          <td><span class="icon-check">✓</span></td>
+          <td><span class="icon-check">✓</span></td>
+        </tr>
+        <tr>
+          <td>Finance office coaching</td>
+          <td><span class="icon-x">✕</span></td>
+          <td><span class="icon-check">✓</span></td>
+          <td><span class="icon-check">✓</span></td>
+        </tr>
+        <tr>
+          <td>Written savings report</td>
+          <td><span class="icon-x">✕</span></td>
+          <td><span class="icon-check">✓</span></td>
+          <td><span class="icon-check">✓</span></td>
+        </tr>
+        <tr>
+          <td>Priority 2-hour response</td>
+          <td><span class="icon-x">✕</span></td>
+          <td><span class="icon-check">✓</span></td>
+          <td><span class="icon-check">✓</span></td>
+        </tr>
+        <tr>
+          <td>Luxury and exotic sourcing</td>
+          <td><span class="icon-x">✕</span></td>
+          <td><span class="icon-x">✕</span></td>
+          <td><span class="icon-check">✓</span></td>
+        </tr>
+        <tr>
+          <td>ADM markup negotiation</td>
+          <td><span class="icon-x">✕</span></td>
+          <td><span class="icon-x">✕</span></td>
+          <td><span class="icon-check">✓</span></td>
+        </tr>
+        <tr>
+          <td>Allocation access strategies</td>
+          <td><span class="icon-x">✕</span></td>
+          <td><span class="icon-x">✕</span></td>
+          <td><span class="icon-check">✓</span></td>
+        </tr>
+        <tr>
+          <td>30-day extended deal support</td>
+          <td><span class="icon-x">✕</span></td>
+          <td><span class="icon-x">✕</span></td>
+          <td><span class="icon-check">✓</span></td>
+        </tr>
+        <tr>
+          <td>Post-closing debrief call</td>
+          <td><span class="icon-x">✕</span></td>
+          <td><span class="icon-x">✕</span></td>
+          <td><span class="icon-check">✓</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="eyebrow">Questions</div>
+  <h2 class="section-title">Questions we get<br>before people book.</h2>
+  <div class="faq-list">
+    <details class="faq-item">
+      <summary>
+        <span class="faq-question">Can I just negotiate myself?</span>
+        <span class="faq-icon">+</span>
+      </summary>
+      <p class="faq-answer">You can. The dealer's finance manager has done this thousands of times this year. You've done it twice. Experience is the advantage — and right now they have it.</p>
+    </details>
+    <details class="faq-item">
+      <summary>
+        <span class="faq-question">What if I don't save more than your fee?</span>
+        <span class="faq-icon">+</span>
+      </summary>
+      <p class="faq-answer">That has not happened. But if your situation is unusual, we will discuss it on your free strategy call before you commit to anything.</p>
+    </details>
+    <details class="faq-item">
+      <summary>
+        <span class="faq-question">How do I know you're not connected to dealerships?</span>
+        <span class="faq-icon">+</span>
+      </summary>
+      <p class="faq-answer">We are paid only by you. No dealer referral fees. No manufacturer incentives. No conflicts of interest.</p>
+    </details>
+    <details class="faq-item">
+      <summary>
+        <span class="faq-question">How long does the process take?</span>
+        <span class="faq-icon">+</span>
+      </summary>
+      <p class="faq-answer">Most deals close within 5 to 7 business days from your intake call, depending on vehicle availability.</p>
+    </details>
+    <details class="faq-item">
+      <summary>
+        <span class="faq-question">Do you work on used cars too?</span>
+        <span class="faq-icon">+</span>
+      </summary>
+      <p class="faq-answer">Yes. Used car sourcing is available under the Full Concierge tier given the additional complexity of locating and vetting pre-owned inventory.</p>
+    </details>
+  </div>
 </section>
 
 <!-- CTA -->
 <section class="cta-section">
   <div>
     <div class="eyebrow" style="color: rgba(201,168,76,0.55);">Ready when you are</div>
-    <h2 class="cta-headline">Tell us what<br>you're looking for.<br><em>We'll take it from there.</em></h2>
-    <p class="cta-sub">No commitment required. Just tell us what you need and we'll be in touch within one business day.</p>
+    <h2 class="cta-headline">15 minutes changes<br>how much you pay.</h2>
+    <p class="cta-sub">Tell us what you are looking for. We will tell you exactly what you should be paying and what we will do to get you there.</p>
   </div>
   <div class="cta-right">
-    <a class="cta-main-btn" href="https://tally.so/r/44zoQo" target="_blank">Speak to a Consultant</a>
-    <p class="cta-reassure">Free consultation · No dealership visits · Delivered to your door</p>
+    <a class="cta-main-btn" href="https://tally.so/r/yPgxO8" target="_blank">Book Your Free Strategy Call</a>
+    <p class="cta-reassure">No pressure. No pitch. Just information.</p>
   </div>
 </section>
 
@@ -1530,7 +2315,7 @@ footer {
   <div class="footer-word">Clearev Consultants</div>
   <div class="footer-links">
     <a href="tel:4045942950">(404) 594-2950</a>
-    <a href="https://go.clearevconsultants.com" target="_blank">clearevconsultants.com</a>
+    <a href="https://clearevconsultants.com" target="_blank">clearevconsultants.com</a>
     <a href="mailto:info@clearevconsultants.com">info@clearevconsultants.com</a>
   </div>
 </footer>
@@ -1618,7 +2403,7 @@ footer {
     });
   }, { threshold: 0.08 });
 
-  document.querySelectorAll('.how-step, .vehicle-card, .why-card, .stat-row').forEach(el => {
+  document.querySelectorAll('.problem-card, .timeline-item, .vehicle-card, .why-card, .stat-row').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(24px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
